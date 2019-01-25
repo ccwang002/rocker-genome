@@ -4,12 +4,7 @@
 FROM rocker/tidyverse:latest
 LABEL maintainer="liang-bo.wang@wustl.edu"
 
-RUN apt-get update -qq \
-    && apt-get -y --no-install-recommends install \
-    libgdal-dev libproj-dev \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/* \
-    && install2.r --error \
+RUN install2.r --error \
         # Visualization related
         ggrepel \
         viridis \
