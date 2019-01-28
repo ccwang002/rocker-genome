@@ -4,4 +4,5 @@
 FROM lbwang/rocker-genome:latest
 LABEL maintainer="liang-bo.wang@wustl.edu"
 
-RUN Rscript -e 'BiocManager::install("tximport", "DESeq2", update=FALSE, ask=FALSE)'
+COPY install.R /usr/src
+RUN R -f /usr/src/install.R
