@@ -9,4 +9,14 @@ The docker image builds on top of the Docker image [rocker/tidyverse] and includ
 - Genome annotation:
     - `ensembldb`
 
+
+## Derived docker images
+
+### `lbwang/rocker-transcriptome`
+The docker images includes R packages for transcriptome analysis:
+
+- `tximport`
+- `DESeq2`
+
+
 [rocker/tidyverse]: https://github.com/rocker-org/rocker-versioned
