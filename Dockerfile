@@ -10,4 +10,6 @@ RUN install2.r --error \
         viridis \
         colorspace \
         pheatmap \
-    && Rscript -e 'BiocManager::install("ensembldb", update=FALSE, ask=FALSE)'
+    && Rscript -e 'BiocManager::install("ensembldb", update=FALSE, ask=FALSE)' \
+    # Newer ComplexHeatmap (not on Bioconductor yet)
+    && installGithub.r 'jokergoo/ComplexHeatmap@1.99.4'

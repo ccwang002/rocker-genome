@@ -3,6 +3,7 @@ The docker image builds on top of the Docker image [rocker/tidyverse] and includ
 
 - Visualization:
     - `pheatmap`
+    - `ComplexHeatmap` (latest release 1.99.4)
     - `ggrepel`
     - `viridis`
     - `colorspace`
