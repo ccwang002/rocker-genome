@@ -18,6 +18,7 @@ The docker images includes R packages for transcriptome analysis:
 
 - `tximport`
 - `DESeq2`
-
+- `apeglm`
+- `vsn`
 
 [rocker/tidyverse]: https://github.com/rocker-org/rocker-versioned
