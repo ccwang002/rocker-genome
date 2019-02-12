@@ -29,3 +29,11 @@ The full list of installed R packages can be found at [`installed_packages.rocke
 [rocker/tidyverse]: https://github.com/rocker-org/rocker-versioned
 [pkg-list rocker-genome]: https://github.com/ccwang002/rocker-genome/blob/master/installed_packages.rocker_genome.tsv
 [pkg-list rocker-transcriptome]: https://github.com/ccwang002/rocker-genome/blob/master/installed_packages.rocker-transcriptome.tsv
+
+
+
+## Utility
+The command to update the list of installed R packages:
+
+    bash gen_all_pkg_lists.sh
+
