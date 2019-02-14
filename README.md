@@ -9,6 +9,9 @@ The docker image builds on top of the Docker image [rocker/tidyverse] and includ
     - `colorspace`
 - Genome annotation:
     - `ensembldb`
+- Multiple testing correction:
+    - `fdrtool`
+    - `qvalue`
 
 The full list of installed R packages can be found at [`installed_packages.rocker_genome.tsv`][pkg-list rocker-genome].
 
