@@ -4,5 +4,5 @@
 FROM lbwang/rocker-genome:latest
 LABEL maintainer="liang-bo.wang@wustl.edu"
 
-COPY install.R /usr/src
-RUN R -f /usr/src/install.R
+COPY install_transcriptome_pkgs.R /usr/src
+RUN R -f /usr/src/install_transcriptome_pkgs.R
