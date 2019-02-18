@@ -1,4 +1,11 @@
 ## Docker image of R, RStudio, and genomic tools
+This repo builds various R Docker images for genomic analysis:
+
+- [lbwang/rocker-genome](https://hub.docker.com/r/lbwang/rocker-genome)
+- [lbwang/rocker-transcriptome](https://hub.docker.com/r/lbwang/rocker-transcriptome)
+
+
+### `lbwang/rocker-genome`
 The docker image builds on top of the Docker image [rocker/tidyverse] and includes useful R packages for genomic data:
 
 - Visualization:
