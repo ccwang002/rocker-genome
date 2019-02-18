@@ -4,13 +4,16 @@
 FROM rocker/tidyverse:latest
 LABEL maintainer="liang-bo.wang@wustl.edu"
 
+
+COPY install_genome_pkgs.R /usr/src
+
 RUN install2.r --error \
-        # Visualization related
         ggrepel \
         viridis \
         colorspace \
         pheatmap \
         fdrtool \
-    && Rscript -e 'BiocManager::install(c("ensembldb", "qvalue"), update=FALSE, ask=FALSE)' \
+    # Install Bioconductor packages
+    && R -f /usr/src/install_genome_pkgs.R \
     # Newer ComplexHeatmap (not on Bioconductor yet)
     && installGithub.r 'jokergoo/ComplexHeatmap@1.99.4'
