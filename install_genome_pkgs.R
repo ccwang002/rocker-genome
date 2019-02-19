@@ -1,6 +1,5 @@
 pkgs <- c(
     "ensembldb",
-    "qvalue",
-    "gtrellis"
+    "qvalue"
 )
 BiocManager::install(pkgs, update=FALSE, ask=FALSE)
