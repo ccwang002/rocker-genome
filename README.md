@@ -8,6 +8,9 @@ This repo builds various R Docker images for genomic analysis:
 ### `lbwang/rocker-genome`
 The docker image builds on top of the Docker image [rocker/tidyverse] and includes useful R packages for genomic data:
 
+- plyr-like grammars:
+    - `plyranges`
+
 - Visualization:
     - `pheatmap`
     - `ComplexHeatmap` (latest release 1.99.4)
