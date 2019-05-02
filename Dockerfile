@@ -5,6 +5,11 @@ FROM rocker/tidyverse:latest
 LABEL maintainer="liang-bo.wang@wustl.edu"
 
 
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        libnss-sss && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
 COPY install_genome_pkgs.R /usr/src
 
 RUN install2.r --error \
