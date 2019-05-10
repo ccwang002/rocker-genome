@@ -8,6 +8,7 @@ LABEL maintainer="liang-bo.wang@wustl.edu"
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         libnss-sss \
+        libgsl-dev \
         libbz2-dev \
         liblzma-dev \
     && apt-get clean \
