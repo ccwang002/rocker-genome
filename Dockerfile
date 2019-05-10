@@ -19,8 +19,8 @@ RUN install2.r --error \
         pheatmap \
         fdrtool \
     # Install Bioconductor packages
-    && R -f /usr/src/install_genome_pkgs.R \
-    # Newer gtrellis and ComplexHeatmap (not on Bioconductor yet)
-    && installGithub.r \
-        'jokergoo/gtrellis' \
-        'jokergoo/ComplexHeatmap@1.99.4'
+    && R -f /usr/src/install_genome_pkgs.R
+    # # Newer gtrellis and ComplexHeatmap (not on Bioconductor yet)
+    # && installGithub.r \
+    #     'jokergoo/gtrellis' \
+    #     'jokergoo/ComplexHeatmap@1.99.4'

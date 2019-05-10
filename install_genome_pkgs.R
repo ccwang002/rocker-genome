@@ -1,6 +1,8 @@
 pkgs <- c(
     "ensembldb",
     "qvalue",
-    "plyranges"
+    "plyranges",
+    "ComplexHeatmap",
+    "gtrellis"
 )
 BiocManager::install(pkgs, update=FALSE, ask=FALSE)
