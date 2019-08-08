@@ -3,7 +3,8 @@ pkgs <- c(
     "DESeq2",
     "apeglm",
     "vsn",
-    "clusterExperiment"
+    "clusterExperiment",
+    "ConsensusClusterPlus"
 )
 
 BiocManager::install(pkgs, update=FALSE, ask=FALSE)
