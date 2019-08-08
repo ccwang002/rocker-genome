@@ -18,13 +18,10 @@ COPY install_genome_pkgs.R /usr/src
 
 RUN install2.r --error \
         ggrepel \
+        ggbeeswarm \
         viridis \
         colorspace \
         pheatmap \
         fdrtool \
     # Install Bioconductor packages
     && R -f /usr/src/install_genome_pkgs.R
-    # # Newer gtrellis and ComplexHeatmap (not on Bioconductor yet)
-    # && installGithub.r \
-    #     'jokergoo/gtrellis' \
-    #     'jokergoo/ComplexHeatmap@1.99.4'

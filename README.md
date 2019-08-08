@@ -16,6 +16,7 @@ The docker image builds on top of the Docker image [rocker/tidyverse] and includ
     - `ComplexHeatmap` (latest release 1.99.4)
     - `gtrellis`
     - `ggrepel`
+    - `ggbeeswarm`
     - `viridis`
     - `colorspace`
 
@@ -39,6 +40,8 @@ The docker images includes R packages for transcriptome analysis:
 - `DESeq2`
 - `apeglm`
 - `vsn`
+- `clusterExperiment`
+- `ConsensusClusterPlus`
 
 The full list of installed R packages can be found at [`installed_packages.rocker-transcriptome.tsv`][pkg-list rocker-transcriptome].
 
