@@ -24,5 +24,6 @@ RUN install2.r --error \
         colorspace \
         pheatmap \
         fdrtool \
+        vroom \
     # Install Bioconductor packages
     && R -f /usr/src/install_genome_pkgs.R
