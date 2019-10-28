@@ -27,6 +27,10 @@ The docker image builds on top of the Docker image [rocker/tidyverse] and includ
     - `fdrtool`
     - `qvalue`
 
+- File I/O:
+    - `vroom`
+    - `zstd` (Zstandard; not a R package)
+
 The full list of installed R packages can be found at [`installed_packages.rocker-genome.tsv`][pkg-list rocker-genome].
 
 
